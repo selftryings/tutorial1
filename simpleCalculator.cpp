@@ -30,4 +30,24 @@ double mean(double x, double y){
 }
 
 int main(){
+    char op;
+    double x{0.0};
+    double y{0.0};
+
+    std::cout << "Select an operation; +, -, /, *, m" << '\n' && std::cin >> op;
+    std::cout << "Give two values" << '\n' && std::cin >> x && std::cin >> y;
+
+    switch(op){
+        case '+':
+            return sum(x,y);
+            break;
+        case '-':
+            return subtract(x,y);
+            break;
+        case '*':
+            return multiply(x,y);
+        case '/':
+            return divide(x,y);
+    }
+
 }
