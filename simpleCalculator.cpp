@@ -25,5 +25,9 @@ double divide(double x, double y){
     }
 }
 
+double mean(double x, double y){
+    return divide(sum(x,y),2);
+}
+
 int main(){
 }
