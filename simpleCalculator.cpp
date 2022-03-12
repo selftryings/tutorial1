@@ -48,6 +48,8 @@ int main(){
             return multiply(x,y);
         case '/':
             return divide(x,y);
+        case 'm':
+            return mean(x,y);
     }
 
 }
