@@ -33,23 +33,29 @@ int main(){
     char op;
     double x{0.0};
     double y{0.0};
+    double output{0.0};
 
     std::cout << "Select an operation; +, -, /, *, m" << '\n' && std::cin >> op;
     std::cout << "Give two values" << '\n' && std::cin >> x && std::cin >> y;
 
     switch(op){
         case '+':
-            return sum(x,y);
+            output = sum(x,y);
             break;
         case '-':
-            return subtract(x,y);
+            output = subtract(x,y);
             break;
         case '*':
-            return multiply(x,y);
+            output = multiply(x,y);
+            break;
         case '/':
-            return divide(x,y);
+            output =  divide(x,y);
+            break;
         case 'm':
-            return mean(x,y);
+            output = mean(x,y);
+            break;
     }
 
+    std::cout << "Result is: " << output << '\n';
+    return 0;
 }
